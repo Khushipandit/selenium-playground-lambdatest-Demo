@@ -13,7 +13,7 @@ describe("Checkbox Demo", function () {
   it("I should see the single checkbox section", function () {
     CheckBoxPage.getSingleCheckboxSection().should("be.visible");
   });
-  it("I click the checkbox in the single checkbox section", function () {
+  it("I click on checkbox in the single checkbox section", function () {
     CheckBoxPage.getsingleCheckbox().click();
   });
   it("I should see the success message", function () {
@@ -25,13 +25,13 @@ describe("Checkbox Demo", function () {
   it("I should see the multiple checkbox section", function () {
     CheckBoxPage.getMultipleCheckboxSection().should("be.visible");
   });
-  it("I click the checkbox in the single checkbox section", function () {
+  it("I click on checkbox in the single checkbox section", function () {
     CheckBoxPage.getMultipleCheckbox().click({ multiple: true });
   });
   it("I click on check all button", function () {
     CheckBoxPage.getCheckAllButton().click();
   });
-  it("I should see the uncheck all button in place of the check all button.", function () {
+  it("I should see the uncheck all button in place of the check all button", function () {
     CheckBoxPage.getCheckAllButton().should("be.visible");
   });
 });

@@ -1,13 +1,13 @@
 const simpleFormlink = ".text-black.text-size-14:eq(0)";
 const simpleInputFormSection = "div.pt-20";
 const messageInputField = "div #user-message:first()";
-const checkedValueButton = "#showInput";
-const messageSection = "#message";
-const twoInputField = ".input-body";
-const firstMessageInputField = "#sum1";
-const secondMessageInputField = "#sum2";
-const getValuesButton = "#gettotal .bg-black";
-const totalSection = "#addmessage";
+const checkedValueButton = "div #showInput";
+const messageSection = "div #message";
+const twoInputField = "div .input-body";
+const firstMessageInputField = "div #sum1";
+const secondMessageInputField = "div #sum2";
+const getValuesButton = "div #gettotal .bg-black";
+const totalSection = "div #addmessage";
 class SimpleFormPage {
   static getSimpleFormLink() {
     return cy.get(simpleFormlink);

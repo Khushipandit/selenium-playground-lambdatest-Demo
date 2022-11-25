@@ -1,10 +1,10 @@
 const checkboxlink = ".text-black:eq(1)";
-const singleCheckboxSection = ".pt-20";
-const singleCheckbox = "#isAgeSelected";
-const successMessage = "#txtAge";
-const multipleCheckboxSection = ".input-body";
+const singleCheckboxSection = "div.pt-20";
+const singleCheckbox = "div #isAgeSelected";
+const successMessage = "div #txtAge";
+const multipleCheckboxSection = "div .input-body";
 const multipleCheckbox = "div .input-body .flex input[type='checkbox']";
-const checkAllButton = "#box";
+const checkAllButton = "div #box";
 class CheckBoxPage {
   static getcheckboxlink() {
     return cy.get(checkboxlink);
