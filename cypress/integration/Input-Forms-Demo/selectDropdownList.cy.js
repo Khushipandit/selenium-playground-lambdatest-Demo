@@ -4,10 +4,10 @@ describe("Select DropdownList Demo", function () {
   it("I am on the homepage of the Selenium Playground", function () {
     cy.visit("/");
   });
-  it("I click on the radio button demo link in the input forms section", function () {
+  it("I click on the dropdown list link in the input forms section", function () {
     SelectDropdownPage.getDropdownListlink().click({ force: true });
   });
-  it("I navigated to the simple form demo page", function () {
+  it("I navigated to the dropdown list demo page", function () {
     cy.url().should("include", "/select-dropdown-demo");
   });
 
