@@ -7,7 +7,7 @@ describe("Select DropdownList Demo", function () {
   it("I click on the dropdown list link in the input forms section", function () {
     SelectDropdownPage.getDropdownListlink().click({ force: true });
   });
-  it("I navigated to the dropdown list demo page", function () {
+  it("I navigate to the dropdown list demo page", function () {
     cy.url().should("include", "/select-dropdown-demo");
   });
 

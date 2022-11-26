@@ -7,7 +7,7 @@ describe("Checkbox Demo", function () {
   it("I click on the checkbox demo link in the input forms section", function () {
     CheckBoxPage.getcheckboxlink().click({ force: true });
   });
-  it("I navigated to the checkbox demo page", function () {
+  it("I navigate to the checkbox demo page", function () {
     cy.url().should("include", "/checkbox-demo");
   });
   it("I should see the single checkbox section", function () {

@@ -7,7 +7,7 @@ describe("Simple Form Demo", function () {
   it("I click on the radio button demo link in the input forms section", function () {
     radioButtonPage.getRadioButtonlink().click({ force: true });
   });
-  it("I navigated to the radio button demo page", function () {
+  it("I navigate to the radio button demo page", function () {
     cy.url().should("include", "/radiobutton-demo");
   });
   it("I should see the radio button section", function () {
