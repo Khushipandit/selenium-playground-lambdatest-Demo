@@ -7,7 +7,7 @@ describe("Simple Form Demo", function () {
   it("I click on the simple form demo link in the input forms section", function () {
     SimpleFormPage.getSimpleFormLink().click({ force: true });
   });
-  it("I navigate to the simple form demo page", function () {
+  it("I should navigate to the simple form demo page", function () {
     cy.url().should("include", "/simple-form-demo");
   });
   it("I should see the single input field section", function () {
