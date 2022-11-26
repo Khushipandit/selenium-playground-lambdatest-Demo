@@ -3,7 +3,7 @@ describe("Input form Demo", function () {
   it("I am on the homepage of the Selenium Playground", function () {
     cy.visit("/");
   });
-  it("I click on the input form submit link in the input forms section", function () {
+  it("I click on the input form link in the input forms section", function () {
     InputFormSubmitPage.getInputFormlink().click({ force: true });
   });
   it("I should navigate to the input form submit page", function () {
@@ -22,14 +22,13 @@ describe("Input form Demo", function () {
   it("I fill password on the password input field", function () {
     InputFormSubmitPage.getPasswordInputField();
   });
-
   it("I fill xyz.co on the company input field", function () {
     InputFormSubmitPage.getCompanyName().type("XYZ.co");
   });
   it("I fill xyz.com on the website input field", function () {
     InputFormSubmitPage.getWebsiteName().type("XYZhosting.com");
   });
-  it("I fill test data on the country input field", function () {
+  it("I fill india on the country input field", function () {
     InputFormSubmitPage.getCountryDropDown().select("India");
   });
   it("I fill delhi on the city input field", function () {
@@ -44,7 +43,7 @@ describe("Input form Demo", function () {
   it("I fill delhi on the state input field", function () {
     InputFormSubmitPage.getStateInputField().type("Delhi");
   });
-  it("I fill 110059 data on the zip code input field", function () {
+  it("I fill 110059 on the zip code input field", function () {
     InputFormSubmitPage.getZipCode().type("110059");
   });
   it("I click on submit button", function () {
